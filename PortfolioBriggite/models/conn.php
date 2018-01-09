@@ -1,15 +1,18 @@
-
 <?php
- $mysqli = new mysqli("127.0.0.1", "root", "newpassword", "portfolio");
+	//Set connection credentianls
+	$user = "root";
+	$pass = ""; // for Pc
+	//$pass = "root" for MAC only
+	$url = "localhost";
+	$db = "db_portfolio";
 
- // check Connection
- if($mysqli === false){
- 	die("ERROR: Could Not connect. " . $mysqli->connect_error);
+	//$link = mysql_connect($url, $user, $pass, $db, "8889"); // MAC only add "8889(localhost code)"
+	//create us access token to our database
+	$link = mysqli_connect($url, $user, $pass, $db);
 
- }
-  	 // print host information
- echo " Connect Successfully. Host info: " . $mysqli->host_info;
-
- // Close connection
- $mysqli->close();
- ?>
+	//Check connection w/ error message
+	if(mysqli_connect_errno()){
+		printf("Connection failed: %s\n", mysqli_connect_error);
+		exit();
+	}
+?>
