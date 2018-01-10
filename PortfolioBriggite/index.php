@@ -85,7 +85,7 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: myEmail@live.com<br>
       </div>-->
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <form action="send_mail.php" method="post">
 
         <div class="w3-row-padding" style="margin:50px -16px 8px -16px">
 
