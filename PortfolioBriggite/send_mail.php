@@ -15,18 +15,18 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings                                 // Enable verbose debug output
-    $mail->SMTPDebug = 2;   
+    $mail->SMTPDebug = 2;
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'hawk_crowxx@hotmail.com';                 // SMTP username
-    $mail->Password = 'yinchurikiHAWK';                           // SMTP password
+    $mail->Username = 'briggite_coronel@hotmail.com';                 // SMTP username
+    $mail->Password = '25Briicoronel';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('hawk_crowxx@hotmail.com');
-    $mail->addAddress('hawkcrowxx@gmail.com');
+    $mail->setFrom('briggite_coronel@hotmail.com');
+    $mail->addAddress('briggite_coronel@hotmail.com');
     $mail->AddReplyTo($email);               // Name is optional
     //Attachments
     //Content
@@ -63,7 +63,7 @@ try {
     exit;
 }
 ob_end_flush();
-?> 
+?>
 
 <script>
 	window.location.href= "message_sent.html"
