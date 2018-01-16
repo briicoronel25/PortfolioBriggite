@@ -8,8 +8,8 @@
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="logo" class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"></span>
-    <img alt="logo" id="logo">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"></span>
+    <img src="images/portfolio-logo-white.png" alt="logo" id="logo">
   </div>
 </div>
 
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-padding-large">
+    <div class="w3-col m6 w3-container w3-padding-large">
       <p>Welcome to my Portfolio. My name is Briggite. I am a latin girl from Ecuador living in Canada... yeah, what a change!
         I have discover my passion about photography, modeling and also web development/design. I am also in love with makeup!
       I'm currently studig Interactive Media Design in London, Ontario. Join me in this journey while I keep experiencing, learning and puuting everything into practice to be one of the best! </p>
@@ -85,7 +85,7 @@
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: myEmail@live.com<br>
       </div>-->
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-      <form action="/action_page.php" target="_blank">
+      <form action="send_mail.php" method="post">
 
         <div class="w3-row-padding" style="margin:50px -16px 8px -16px">
 
