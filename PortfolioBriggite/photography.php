@@ -1,6 +1,8 @@
-<?php include ('views/header.php');?>
+
 <!-- Include config file -->
 <?php include ('getimage.php');?>
+
+<?php include ('views/header.php');?>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
@@ -90,6 +92,8 @@
 
 <!-- Footer -->
 <?php include ('views/footer.php');?>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/modal.js"></script>
 
 </body>
 </html>

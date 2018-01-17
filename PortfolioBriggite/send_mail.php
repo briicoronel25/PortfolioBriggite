@@ -3,7 +3,6 @@
 <body>
 
 <?php
-ob_start();
 $name=$_POST["Name"];
 $message=$_POST["Message"];
 $email=$_POST["Email"];
@@ -15,17 +14,16 @@ use PHPMailer\PHPMailer\PHPMailer;
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
     //Server settings                                 // Enable verbose debug output
-    $mail->SMTPDebug = 2;
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.live.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'mail.briggitecoronel.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'briggite_coronel@hotmail.com';                 // SMTP username
-    $mail->Password = '25Briicoronel';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->Username = 'briggite_coronel@briggitecoronel.com';                 // SMTP username
+    $mail->Password = '25Briicoroneld';                           // SMTP password
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('briggite_coronel@hotmail.com');
+    $mail->setFrom('briggite_coronel@briggitecoronel.com');
     $mail->addAddress('briggite_coronel@hotmail.com');
     $mail->AddReplyTo($email);               // Name is optional
     //Attachments
@@ -55,14 +53,11 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     $mail->send();
     header("Location: message_sent.html");
-    exit;
 } catch (Exception $e) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
     header("Location: message_sent.html");
-    exit;
 }
-ob_end_flush();
 ?>
 
 <script>
