@@ -1,5 +1,4 @@
 <?php
-
   // do some validation here to ensure id is safe
   function getImage($name){
     $con = new mysqli("localhost","diego529_brii","25Briicoroneld","diego529_db_portfolio");

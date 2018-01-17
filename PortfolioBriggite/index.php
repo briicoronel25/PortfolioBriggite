@@ -75,7 +75,6 @@
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1 519.123.4567<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: myEmail@live.com<br>
       </div>-->
-
       <h4>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</h4>
       <form action="send_mail.php" method="post">
 
