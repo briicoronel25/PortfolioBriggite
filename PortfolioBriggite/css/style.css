@@ -1,4 +1,4 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body,h1,h3,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
     height: 100%;
     color: #000;
@@ -9,8 +9,8 @@ p {
   color: #000;
 }
 
-h2 {
-  color: #000;
+h2,h4,a {
+  padding-top: 20px;
 }
 
 .logo {
@@ -21,15 +21,16 @@ h2 {
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
     background-attachment: fixed;
-    /*background-position: center;*/
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 /* First image HOME (Logo. Full height) */
+
 .bgimg-1 {
-    background-image: url(../images/modeling/photo6.JPG);
+    background-image: url(../images/bg-big.jpg);
     min-height: 100%;
 }
 
@@ -42,13 +43,13 @@ h2 {
 
 /* Third image (design) */
 .bgimg-3 {
-    background-image: url(../images/design-bg2.jpeg);
+    background-image: url(../images/design-bg2.jpg);
     min-height: 400px;
 }
 
 /* Third image (modeling) */
 .bgimg-4 {
-    background-image: url(../images/photo9.jpg);
+    background-image: url(../images/modeling/photo9.jpg);
     min-height: 400px;
 }
 
@@ -214,6 +215,7 @@ textarea {
     font: inherit;
     margin: 0
 }
+
 optgroup {
     font-weight: bold
 }
@@ -322,10 +324,10 @@ h5,
 h6 {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
-    margin: 10px 0
+    margin: 0px 0;
 }
 .w3-wide {
-    letter-spacing: 4px
+    letter-spacing: 4px;
 }
 hr {
     border: 0;
@@ -474,7 +476,6 @@ a {
     display: block;
     border: none;
     border-bottom: 1px solid #ccc;
-    margin-left: 200px;
     width: 350px;
 }
 .w3-select {
@@ -483,15 +484,12 @@ a {
     border: none;
     border-bottom: 1px solid #ccc
 }
-/*.w3-half {
-  margin-left: 9px;
-}*/
 
 .w3-dropdown-click,
 .w3-dropdown-hover {
     position: relative;
     display: inline-block;
-    cursor: pointer
+    cursor: pointer;
 }
 .w3-dropdown-hover:hover .w3-dropdown-content {
     display: block;
@@ -515,7 +513,7 @@ a {
     position: absolute;
     min-width: 160px;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 .w3-check,
 .w3-radio {
@@ -723,10 +721,6 @@ a {
     .w3-col.m12 {
         width: 99.99999%
     }
-    .w3-input {
-        margin-left: 90px;
-        width: 210px;
-    }
 
 }
 @media (min-width: 993px) {
@@ -800,10 +794,7 @@ a {
 .w3-show-inline-block {
     display: inline-block!important
 }
-.w3-input {
-    margin-left: 150px;
-    width: 350px;
-}
+
 
 @media (max-width: 600px) {
     .w3-modal-content {
@@ -839,11 +830,6 @@ a {
     }
 }
 
-.w3-input {
-    margin-left: 130px;
-    width: 350px;
-}
-
 @media (max-width: 768px) {
     .w3-modal-content {
         width: 500px
@@ -851,10 +837,6 @@ a {
     .w3-modal {
         padding-top: 50px
     }
-}
-.w3-input {
-    margin-left: 120px;
-    width: 270px;
 }
 
 @media (min-width: 993px) {
@@ -868,6 +850,20 @@ a {
         display: block!important
     }
 }
+@media (min-width: 375px){
+  .bgimg-1 {
+      background-image: url(../images/bg-small.jpg);
+      min-height: 100%;
+  }
+}
+
+@media (min-width: 768px){
+  .bgimg-1 {
+      background-image: url(../images/bg-big.jpg);
+      min-height: 100%;
+  }
+}
+
 @media (max-width: 992px) and (min-width: 601px) {
     .w3-hide-medium {
         display: none!important
@@ -1153,13 +1149,13 @@ a {
 
 .w3-opacity-off,
 .w3-hover-opacity-off:hover {
-    opacity: 1
+    opacity: 1;
 }
 .w3-opacity-max {
     opacity: 0.25
 }
 .w3-opacity-min {
-    opacity: 0.75
+    opacity: 0.7;
 }
 .w3-greyscale-max,
 .w3-grayscale-max,

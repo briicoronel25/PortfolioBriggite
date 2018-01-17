@@ -15,19 +15,19 @@
 
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="index.php" class="w3-bar-item w3-button w3-hide-small">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT</a>
-    <a href="#photography" class="w3-bar-item w3-button w3-hide-small">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">CONTACT</a>
+    <a href="index.php" target="_self" class="w3-bar-item w3-hover-white w3-button w3-hide-small">HOME</a>
+    <a href="index.php#about" target="_self" class="w3-bar-item w3-hover-white w3-button w3-hide-small">ABOUT</a>
+    <a href="index.php#photography" target="_self" class="w3-bar-item w3-hover-white w3-button w3-hide-small">PORTFOLIO</a>
+    <a href="index.php#contact" target="_self" class="w3-bar-item w3-hover-white w3-button w3-hide-small">CONTACT</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#photography" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="index.php#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="index.php#photography" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="index.php#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
